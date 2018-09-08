@@ -1,0 +1,95 @@
+<app-postings-header>
+  <h1>
+    Add new job
+  </h1>
+</app-postings-header>
+
+<form [formGroup]="postingForm" (ngSubmit)="onSubmit()" novalidate>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Posting Information</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Title" formControlName="title">
+            <mat-error *ngIf="postingForm.controls['title'].hasError('required')">
+              Title is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Company" formControlName="company">
+            <mat-error *ngIf="postingForm.controls['company'].hasError('required')">
+              Company is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Salary min" type="number" formControlName="salaryMin">
+            <mat-error *ngIf="postingForm.controls['salaryMin'].hasError('required')">
+              Salary min is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Salary max" type="number" formControlName="salaryMax">
+            <mat-error *ngIf="postingForm.controls['salaryMax'].hasError('required')">
+              Salary max is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="postingForm.controls['salaryMax'].hasError('maxRange')">
+              Salary max is <strong>bigger than 2x Salary max</strong>
+            </mat-error>
+            <mat-error *ngIf="postingForm.controls['salaryMax'].hasError('minRange')">
+              Salary max needs <strong>to be bigger than Salary min</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="City" formControlName="city">
+            <mat-error *ngIf="postingForm.controls['city'].hasError('required')">
+              City is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Street" formControlName="street">
+            <mat-error *ngIf="postingForm.controls['street'].hasError('required')">
+              Street is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Postal Code" formControlName="postalCode">
+            <mat-error *ngIf="postingForm.controls['postalCode'].hasError('required')">
+              Postal Code is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="postingForm.controls['postalCode'].hasError('notValid')">
+              Postal Code is <strong>not valid</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="postingForm.invalid || postingForm.pristine" mat-raised-button color="primary" type="submit">Submit</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

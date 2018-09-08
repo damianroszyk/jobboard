@@ -1,0 +1,20 @@
+<img class="company-logo" src="./assets/example-logo-2.png">
+<div class="job">
+  <div class="flex-row">
+    <div class="info">
+      <h3>{{ posting.title }}</h3>
+      <h5>{{ posting.company }}</h5>
+    </div>
+    <!--<button mat-flat-button>category</button>-->
+  </div>
+  <div class="flex-row details">
+    <!--<div class="tags">-->
+      <!--<button mat-stroked-button>tag</button>-->
+      <!--<button mat-stroked-button>tag</button>-->
+    <!--</div>-->
+    <div class="details">
+      <span><strong>{{ posting.salaryMin }} - {{posting.salaryMax}} </strong> zł</span>
+      <span><mat-icon>location_on</mat-icon> {{posting.city}}</span>
+    </div>
+  </div>
+</div>

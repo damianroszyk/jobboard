@@ -1,0 +1,14 @@
+<app-postings-header>
+  <h1>
+    Search for your dream job
+  </h1>
+</app-postings-header>
+
+<div class="list">
+  <ng-container *ngIf="!(loading$ | async); else loadingTpl">
+    <app-posting [posting]="posting" *ngFor="let posting of postings$ | async">
+    </app-posting>
+  </ng-container>
+
+  <ng-template #loadingTpl>loading...</ng-template>
+</div>

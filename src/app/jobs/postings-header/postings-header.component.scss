@@ -1,0 +1,13 @@
+.header {
+  text-align: center;
+  background-color: #4a58ff;
+  padding: 2em;
+
+  ::ng-deep {
+    h1 {
+      font-weight: 300;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}

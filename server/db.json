@@ -1,0 +1,84 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Front end developer",
+      "company": "No fluff",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "2",
+      "title": "Back end developer",
+      "company": "L4a",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "3",
+      "title": "UI/UX designer",
+      "company": "Google",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "4",
+      "title": "QA",
+      "company": "Microsoft",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": 5,
+      "title": "Project manager",
+      "company": "Netflix",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "6",
+      "title": "Front end developer",
+      "company": "No fluff",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "7",
+      "title": "Angular developer",
+      "company": "No fluff",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    },
+    {
+      "id": "8",
+      "title": "React developer",
+      "company": "Facebook",
+      "salaryMin": 0,
+      "salaryMax": 10000,
+      "city": "Wrocław, Poland",
+      "postalCode": "53-030",
+      "street": "Przyjaźni"
+    }
+  ]
+}
